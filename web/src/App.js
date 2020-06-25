@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import api from './services/api';
 
 import './global.css';
 import './App.css';
@@ -11,6 +12,9 @@ import './Main.css';
 // Propriedade: Informações que um componente pai passa para o componente filho
 
 function App() {
+
+  const [devs, setDevs] = useState([]);
+
   const [github_usarname, setGithubUsername] = useState('');
   const [techs, setTechs] = useState('');
   const [latitude, setLatitude] = useState('');
@@ -34,11 +38,37 @@ function App() {
 
   }, []);
 
+    useEffect(() => {
+      async function loadDevs() {
+        const response = await api.get('/devs');
+
+        setDevs(response.data);
+      }
+
+      loadDevs();
+
+  }, []);
+
+  async function handleAddDev(e) {
+    e.preventDefault();
+
+    const response = await api.post('/devs', {
+      github_usarname,
+      techs,
+      latitude,
+      longitude
+    })
+
+    setGithubUsername('');
+    setTechs('');
+
+  }
+
   return (
     <div id="app">
       <aside>
         <strong>Cadastrar</strong>
-        <form>
+        <form onSubmit={handleAddDev}>
           <div className="input-block">
             <label htmlFor="github_usarname">Usuário do Github</label>
             <input 
