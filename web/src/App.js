@@ -3,6 +3,7 @@ import React from 'react';
 import './global.css';
 import './App.css';
 import './Sidebar.css';
+import './Main.css';
 
 // Componente: Bloco isolado de HTML, CSS E JS,
 // não interfere no restante da apli (função que retorna algum conteudo)
@@ -44,6 +45,58 @@ function App() {
         </form>
       </aside>
       <main>
+        <ul>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/61742539?s=460&u=43a673266e3aee63c46ff1f35a8add0f7ce38602&v=4" alt="Sara Alcaras"/>
+              <div className="user-info">
+                <strong>Sara Alcaras</strong>
+                <span>JavaScript, ReactJS, NodeJs</span>
+              </div>
+            </header>
+            <p>Apaixonada por tecnologia </p>
+            <a href="https://github.com/Sara-Alcaras">Acessar perfil no GitHub</a>
+          </li>
+
+
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/61742539?s=460&u=43a673266e3aee63c46ff1f35a8add0f7ce38602&v=4" alt="Sara Alcaras"/>
+              <div className="user-info">
+                <strong>Sara Alcaras</strong>
+                <span>JavaScript, ReactJS, NodeJs</span>
+              </div>
+            </header>
+            <p>Apaixonada por tecnologia </p>
+            <a href="https://github.com/Sara-Alcaras">Acessar perfil no GitHub</a>
+          </li>
+
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/61742539?s=460&u=43a673266e3aee63c46ff1f35a8add0f7ce38602&v=4" alt="Sara Alcaras"/>
+              <div className="user-info">
+                <strong>Sara Alcaras</strong>
+                <span>JavaScript, ReactJS, NodeJs</span>
+              </div>
+            </header>
+            <p>Apaixonada por tecnologia </p>
+            <a href="https://github.com/Sara-Alcaras">Acessar perfil no GitHub</a>
+          </li>
+
+
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/61742539?s=460&u=43a673266e3aee63c46ff1f35a8add0f7ce38602&v=4" alt="Sara Alcaras"/>
+              <div className="user-info">
+                <strong>Sara Alcaras</strong>
+                <span>JavaScript, ReactJS, NodeJs</span>
+              </div>
+            </header>
+            <p>Apaixonada por tecnologia </p>
+            <a href="https://github.com/Sara-Alcaras">Acessar perfil no GitHub</a>
+          </li>
+
+        </ul>
 
       </main>
     </div>
