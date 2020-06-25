@@ -2,6 +2,7 @@ import React from 'react';
 
 import './global.css';
 import './App.css';
+import './Sidebar.css';
 
 // Componente: Bloco isolado de HTML, CSS E JS,
 // não interfere no restante da apli (função que retorna algum conteudo)
